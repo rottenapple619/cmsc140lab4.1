@@ -124,11 +124,11 @@ public class FingerTable {
     }
     
     /**
-     * tests whether newEntry immediately precedes comparator with respect to successorOfComparator
+     * tests whether newEntry supersedes successorOfComparator
      * @param newEntry
      * @param comparator
      * @param successorOfComparator the current successor of comparator
-     * @return true if newEntry immediately precedes comparator
+     * @return true if newEntry superseded successorOfComparator
      */
     public static boolean isSuccessor(Long newEntry, Long comparator, Long successorOfComparator) {//amazing Lyle
         return ((newEntry > comparator && newEntry <= successorOfComparator)
